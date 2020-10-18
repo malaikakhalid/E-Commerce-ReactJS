@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./component/Header";
 import "./component/Header.css";
 import Home from "./component/Home";
+import Checkout from './component/Checkout'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
@@ -11,14 +12,15 @@ function App() {
     <Router>
       <div className="App">
         {/* Header */}
+        <Header/>
         <Switch>
          <Route path="/checkout">
-            <Header />
-            <h1>I am checkout</h1>
+           
+            <Checkout />
           </Route>
 
           <Route path="/">
-            <Header />
+          
             <Home />
           </Route>
 
@@ -30,3 +32,8 @@ function App() {
 }
 
 export default App;
+
+// npm i react-currency-format
+// npm i react-router-dom
+// npm i material ui (core, icons)
+// npm i firebase 
