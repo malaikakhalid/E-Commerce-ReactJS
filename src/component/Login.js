@@ -9,6 +9,10 @@ function Login() {
     const signIn =(event) => {
 event.preventDefault();
     }
+
+    const registerBtn = (event) => {
+        
+    }
   return (
     <div className="login">
       <Link to="/">
