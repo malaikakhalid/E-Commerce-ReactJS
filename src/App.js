@@ -73,3 +73,8 @@ export default App;
 // npm i react-router-dom
 // npm i material ui (core, icons)
 // npm i firebase
+// npm i @stripe/stripe-js
+// npm i @stripe/react-stripe-js
+// npm i axios
+// npm i express
+// npm install cores
