@@ -31,6 +31,7 @@ const getClientSecret = async() => {
 }
 getClientSecret();
   },[basket])
+  console.log('The secret is  >>', clientSecret)
   const handleSubmit = async(e) => {
     // do all the fancy stuff
     e.preventDefault();

@@ -1,7 +1,7 @@
-const functions = require('firebase-functions');
+const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-const { request } = require('express');
+const { request } = require("express");
 const stripe = require("stripe")('sk_test_51Hehn2B8kurbufNPK22x7AjBSRraSlapG6H6pmgwA7UDrJVPA0yYlZ3x01DDFKXpNflY1jLI3PhArll5nsWE6XAt00KHniPZUq')
 
 // API
@@ -15,7 +15,7 @@ app.use(cors({origin:true}));
 app.use(express.json());
 
 // API routes
-app.get('/', (request, response) => response.status(200).send('hello world'))
+app.get("/", (request, response) => response.status(200).send('hello world'))
 app.post('/payments/create', async(request,response) => {
     const total = request.query.total;
 
